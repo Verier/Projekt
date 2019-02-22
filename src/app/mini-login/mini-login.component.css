@@ -1,0 +1,54 @@
+.max-container {
+    position: absolute;
+    width: 60%;
+    margin-left: 20%;
+    border: 3mm ridge rgb(1, 115, 182);;
+    background: white;
+}
+
+.form-container {
+    display: block;
+    width: 90%;
+    padding: 2em;
+    margin: 2em auto;
+    background: #fff;
+}
+
+.alert {
+    background: #f2edda;
+    padding: 7px;
+    font-size: .9em;
+    margin-bottom: inline-block;
+    animation: 2s alertAnim forwards;
+}
+
+.button {
+    margin-top: 3rem;
+}
+
+h1 {
+    margin-bottom:  2rem;
+    font-weight: bold;
+    font-family: 'Muli';
+    font-size: 4em;
+    margin-left: 28%;
+    color: red;
+    font-family: 'Palatino Linotype';
+}
+
+h2 {
+    font-family: 'Muli';
+    font-size: 2em;
+    margin-left: 3%;
+}
+
+ @keyframes alertAnim {
+     from {
+         opacity: 0;
+         transform: translateY(-20px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0); 
+     }
+ }

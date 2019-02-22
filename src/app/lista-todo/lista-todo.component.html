@@ -1,0 +1,43 @@
+<div class="max-container">
+    <input type="submit" class="button expanded" value="Wyloguj" routerLink="/home">
+
+    <div class="work">
+      <input type="submit" class="menu" value="ToDo Lista" routerLink="/lista-todo">
+      <input type="submit" class="menu" value="ToDo Fiszki" routerLink="/todo">
+    </div>
+
+  <h1>ToDoApp</h1>
+
+  <input type="text" class="todo-input" placeholder="Co masz do zrobienia" [(ngModel)]="todoTitle" (keyup.enter)="addTodo()">
+
+  <div class="todo-item" *ngFor="let todo of todosFiltered()" @fade>
+    <div class="todo-item-left">
+      <input type="checkbox" [(ngModel)]="todo.completed" (change)="doneEdit(todo)">
+      <div *ngIf="!todo.editing; else editingTodo" class="todo-item-label" [ngClass]="{ 'completed' : todo.completed }" (dblclick)="editTodo(todo)">{{ todo.title }}</div>
+      <ng-template #editingTodo>
+        <input type="text" class="todo-item-edit" [(ngModel)]="todo.title" (blur)="doneEdit(todo)" (keyup.enter)="doneEdit(todo)" (keyup.esc)="cancelEdit(todo)"autofocus>
+      </ng-template>
+    </div>
+    <div class="remove-item" (click)="deleteTodo(todo.id)">
+      &times;
+    </div>
+  </div>
+
+  <div class="extra-container">
+    <div><label><input type="checkbox" (change)="checkAllTodos()"  [(ngModel)]="!anyRemainingModel">Zaznacz Wszystkie</label></div>
+    <div>Pozostało do zrobienia {{ remaining() }} zadania</div>
+  </div>
+
+  <div class="extra-container">
+    <div>
+      <button [ngClass]="{'active': filter === 'all'}" (click)="filter='all'">Wszystkie</button>
+      <button [ngClass]="{'active': filter === 'active'}" (click)="filter='active'">Aktywne</button>
+      <button [ngClass]="{'active': filter === 'completed'}" (click)="filter='completed'">Zrobione</button>
+    </div>
+
+    <div *ngIf="atLeastOneCompleted()">
+      <button (click)="clearCompleted()">Wyczyść</button>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,49 @@
+1. Instalacja angular
+2. Instalacja node
+3. Instalacja Visual Studio Code
+4. Zaintalowanie Angular-autofocus-fix,
+5. Zainstalowanie Angular Augury
+6. Stworzenie projektu 
+7. Stworzenie componentu "ListaTodo"
+8. Stworzenie w componencie "ListaTodo" w pliku html:
+-input text, umo¿liwiaj¹cy wpisywanie zadañ do listy,
+-listy
+-przycików: Wszystko, Aktywne, Zrobione, Wyczyœæ zrobione
+-checkbox, Zaznacz wszystko
+-licznika zadañ
+-przyciski rzucaj¹ce nas do "ToDo Listy" lub "ToDo Fiszek", 
+-przycisk wyloguj
+10. Tworzymy funkcje w lista-todo.component.ts odpowiadaj¹ce za:
+-wczytanie tekstu z inputa,
+-dodanie go do listy zadañ,
+-funkcje odpowiedzialn¹ za przekreœlanie zrobionego zadania,
+-funkcje pozwalaj¹cej nam edytowaæ zadanie, czyli zamiana textu na input, aby mo¿na go edytowaæ
+-funkcje dodaj¹c¹ jednoczenie wraz ze skreœleniem zadania przycisku "wyczyœæ zrobione"
+-funkcje która usuwa przenosi zadania na liste "zrobione" z listy po klikniêciu przycisku "wyczyœæ zrobione" oraz jednoczeœnie usuwa ten przycisk
+-Funkcje która pozawala zaznaczyæ wszystkie inputy na liœcie i przypisanie jej to przycisku "zaznacz wszysdtkie"
+-Funkcje która sprawia, ¿e po klikniêciu "x" zadanie zostaje usunietem 
+11. Dodanie Loga,
+12. Stworzenie CSS i nadanie wszystkiemu kszta³tu,
+13. Tworzymy nowy component "MiniLogin",
+14.W pliku mini-login.component.ts:
+-importujemy "FormBuilder,FormGroup, Validators" z @angular/forms,
+-tworzymy w³aœciwoœci dla formy,
+-tworzymy constructor, z w³aœciwoœciami "name",
+-tworzymy funcje odpowiedzialn¹ za dodwanie imienia,
+15. Instaluejmy Routes,
+16. Tworzymy pliki app.routing.module.ts
+17. W pliku app.module.ts importujemy RouterModule i Routes z @angular/router
+18. Stworzenie const appRoutes i usupe³niamy linki, gdzie który ma nas kierowac
+19. £¹czymy przycisk "zaloguje" z linkiem do ToDoApp-listy
+20. Stworzenie przycisk wyloguj który przerzuca nas do ToDoApp-login
+21. Stworzenie componentu "todo"
+22. W komponencie "todo.component.html" tworzymy:
+-input text, umo¿liwiaj¹cy wpisywanie zadañ do fiszek,
+-fiszki
+-dodanie pinezki.png
+-przyciski rzucaj¹ce nas do "ToDo Listy" lub "ToDo Fiszek", 
+-przycisk wyloguj
+23. W pliku "todo.component.ts" tworzy funkcje:
+-wczytanie tekstu z inputa,
+-dodanie go do fiszki,
+-funkcje pozwalaj¹cej nam edytowaæ zadanie, czyli zamiana textu na input, aby mo¿na go edytowaæ

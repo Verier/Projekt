@@ -1,0 +1,19 @@
+<div class="max-container">
+  <div *ngIf="!name;">
+    <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+      <div class="form-container">
+        <div class="row columns">
+          <h1>ToDoApp Login</h1>
+          <label><h2>Podaj imię:</h2>
+            <input type="text" formControlName="name">
+          </label>
+          
+          <div class="alert" *ngIf="!rForm.controls['name'].valid&& rForm.controls['name'].touched">Wymagane podanie imienia, conajmniej 3 litery</div>
+
+          <input type="submit" class="button expanded" value="Zaloguj się" routerLink="/lista-todo" [disabled]="!rForm.valid">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

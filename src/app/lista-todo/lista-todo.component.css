@@ -1,0 +1,132 @@
+
+.max-container {
+  position: absolute;
+  width: 60%;
+  margin-left: 20%;
+  border: 3mm ridge rgb(1, 115, 182);;
+  background: white;
+}
+
+.menu{
+  font-size: 15px;
+  background-color: rgb(0, 129, 194);
+  appearance: none;
+  margin: 1%;
+  border: 1mm ridge rgb(1, 115, 182);
+  width: 48%;
+  height: 2em;
+  font-size: 1.5em;
+  color: white
+}
+
+
+
+h1 {
+  margin-bottom:  2rem;
+  font-weight: bold;
+  font-family: 'Muli';
+  font-size: 4em;
+  color: red;
+  margin-left: 35%;
+  margin-top: 70px;
+  font-family: 'Palatino Linotype';
+}
+
+h2 {
+  font-family: 'Muli';
+  font-size: 2em;
+  margin-left: 3%;
+}
+
+.clear {
+  width: 20%;
+}
+
+.todo-input {
+  width: 98%;
+  padding: 10px 18px;
+  font-size: 25px;
+  margin-bottom: 16px;
+  background-color: gainsboro;
+  margin-left: 10px;
+}
+  
+.todo-item {
+  width: 98%;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation-duration: 0.3s;
+  background-color: rgb(240, 238, 238);
+  margin-left: 10px;
+}
+  
+.remove-item {
+  cursor: pointer;
+  margin-left: 14px;
+  font-size: 25px;
+}
+  
+.todo-item-left { 
+  display: flex;
+  align-items: center;
+}
+  
+.todo-item-label {
+  padding: 10px;
+  margin-left: 12px;
+  font-size: 20px;
+}
+  
+.todo-item-edit {
+  font-size: 40px;
+  color: #2c3e50;
+  margin-left: 12px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; 
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+  
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+  
+.extra-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+  border-top: 1px solid lightgrey;
+  padding-top: 14px;
+  margin-bottom: 14px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+  
+button {
+  font-size: 15px;
+  background-color: white;
+  appearance: none;
+  margin-left: 10px;
+  border: 1mm ridge white;
+  width: 8em;
+  height: 2em;
+}
+  
+.active {
+  background: rgb(1, 115, 182);
+}
+  
+ 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+  
+.fade-enter, .fade-leave-to {
+   opacity: 0;
+}
+
+
