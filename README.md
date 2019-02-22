@@ -5,7 +5,10 @@
 # Informacje o projekcie
 
 Projekt Został stworzony, aby zaloczyć zajęcia "Rozwijanie aplikacji internetowych"
-/b Autor: Marcin Hernas
+
+## Autor 
+Autor: Marcin Hernas
+## email
 email: marcinhernas00@gmail.com
 
 # ToDoApp
