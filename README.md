@@ -1,7 +1,12 @@
 # DEMO
 
-[DEMO](https://llqivvkn.github.stackblitz.io/home).
 [DEMO](https://github-mk3bdl.stackblitz.io/home)
+
+# Informacje o projekcie
+
+Projekt Został stworzony, aby zaloczyć zajęcia "Rozwijanie aplikacji internetowych"
+Autor: Marcin Hernas
+email: marcinhernas00@gmail.com
 
 # ToDoApp
 
