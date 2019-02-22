@@ -4,7 +4,7 @@
 
 # Informacje o projekcie
 
-Projekt Został stworzony, aby zaloczyć zajęcia "Rozwijanie aplikacji internetowych"
+Projekt został stworzony, aby zaloczyć zajęcia "Rozwijanie aplikacji internetowych"
 
 ## Autor 
 Autor: Marcin Hernas
